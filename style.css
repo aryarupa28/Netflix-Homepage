@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container::before {
+    content: "";
+    background: url(s3-news-tmp-10557-netflixa--default--1280.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.container .navbar {
+    height: 100px;
+    display: flex;
+}
+
+.container .navbar .left {
+    height: 100%;
+    display: flex;
+    align-items: center; /* Center the logo vertically */
+}
+
+.container .navbar .left img {
+    height: 100px; /* Reduce the height of the logo */
+    margin-left: 35px; /* Adjust margin for logo positioning */
+}
+
+.container .navbar .right {
+    display: flex;
+    height: 100px;
+    align-items: center; /* Center items vertically */
+    margin-left: auto; /* Push items to the right */
+    margin-right: 20px; /* Add some space from the right */
+}
+
+.container .navbar .right .language {
+    font-size: 16px; /* Reduce font size */
+    padding: 5px 10px; /* Adjust padding */
+    color: white;
+    background: none;
+    border: 1px solid white; /* Add a border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer;
+    margin-right: 15px;
+}
+.container .navbar .right .language option {
+    color: black; /* Change the color to black or any other color that contrasts with the background */
+    background-color: white; /* Change the background color of the options */
+}
+
+.container .navbar .right button {
+    font-size: 16px;
+    font-weight: 500; /* Increase font weight */
+    padding: 8px 20px; /* Adjust padding */
+    background: #e50914;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.container .navbar .right button a {
+    text-decoration: none;
+    color: white;
+}
+.title {
+    padding: 70px 45px;
+}
+
+.content {
+    width: 950px;
+    margin: auto;
+    padding: 75px 0;
+    text-align: center;
+}
+
+.content h1 {
+    width: 650px;
+    margin: auto;
+    font-size: 3.1rem;
+    text-align: center;
+}
+
+.content h2 {
+    width: 650px;
+    margin: auto;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.content form h3 {
+    font-size: 1rem;
+    margin: 18px 0;
+    text-align: center;
+}
+
+.email {
+    width: 1000px;
+    margin: auto;
+}
+
+.email input {
+    height: 50px;
+    width: 450px;
+    margin: auto;
+    padding: 20px;
+    font-size: 20px;
+    outline: none;
+}
+
+.email button {
+    margin: auto;
+    height: 50px;
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 7px 17px;
+    background: #e50914;
+    cursor: pointer;
+    outline: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border: none;
+    margin-left: -5px;
+}
+
+.email button a{
+    text-decoration: none;
+    color: white;
+}
+.email button:hover,
+.email button:hover a {
+    background-color: #cc080e; /* Change background color on hover */
+}
